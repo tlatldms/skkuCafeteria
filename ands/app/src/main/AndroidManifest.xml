@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.skku.sw3.skkucafeteria">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="cloud.artik.example.hellocloud.ARTIKCLOUD_AUTHORIZATION_RESPONSE"/>
+            </intent-filter>
+        </activity>
+
+
+        <!-- ddddddddddddddddddddddddddddd-->
+
+        <activity
+            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+            android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <!--
+                 Make sure these two intent filter fields respects "AUTH REDIRECT URL"
+                 of your application set up at the developer.artik.cloud.
+                 For example, if REDIRECT URL is "cloud.artik.example.oauth://oauth2callback",
+                 the intent-filter fields looks like the following
+                -->
+                <data android:scheme="cloud.artik.example.hellocloud" android:host="oauth2callback"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingPreferenceActivity"
+            android:label="선호 메뉴 등록하기"
+            android:icon="@drawable/settingmenu" />
+
+        <activity
+            android:name=".SettingAlarmActivity"
+            android:label="알람 설정하기"
+            android:icon="@drawable/settingmenu" />
+
+        <receiver android:name=".BroadcastD"/>
+    </application>
+
+
+
+</manifest>

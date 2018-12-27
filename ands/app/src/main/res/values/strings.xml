@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">성식당</string>
+
+
+    <!--  Login activity -->
+    <string name="hello_world">Please login to ARTIK Cloud</string>
+    <string name="click">login</string>
+
+    <!-- Message activity -->
+    <string name="play_with_messages">Play with ARTIK Cloud</string>
+    <string name="welcome_txt">Welcome </string>
+    <string name="checksoldout">품절 상태 확인하기</string>
+    <string name="action_button">Turn on the water spray</string>
+    <string name="open_dc">Open Device Channel</string>
+    <string name="off_string">Turn off the water spray</string>
+</resources>

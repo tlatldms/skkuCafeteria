@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mainactivity_menu_artiklogin"
+        android:title="아틱 로그인"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/mainactivity_menu_soldout"
+        android:title="품절 정보 확인"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/mainactivity_menu_preferenceSetting"
+        android:title="선호 메뉴 등록"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/mainactivity_menu_alarmSetting"
+        android:title="알람 설정"
+        app:showAsAction="never"/>
+
+</menu>
